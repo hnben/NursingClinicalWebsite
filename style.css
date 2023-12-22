@@ -1,0 +1,188 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*color change for navbars*/
+.nav_hover:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+#navbarColor{
+    background-color: #6c9574;
+    border-radius: 12px;
+
+}
+
+footer{
+    margin-top: auto;
+}
+
+.dark_mode{
+    padding-right: 2%;
+}
+
+
+/*requirements page*/
+.tabs{
+    padding: 3% 9% 2%;
+}
+
+/*for the tabs*/
+button.accordion-button {
+    background-color: #d5e5cd; /* Change this to your desired green color */
+    color: black; /* Text color for the button */
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 30px;
+
+}
+/*for the tabs*/
+button.accordion-button:not(.collapsed){
+    background-color: #6c9574; /* Change this to your desired green color */
+    color: black; /* Text color for the button */
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 30px;
+}
+
+
+button.accordion-button.collapsed{
+    font-size: 30px;
+}
+button.btn-primary {
+    background-color: #d5e5cd !important;
+    color: black;
+}
+/*Dark Mode Overrides*/
+[data-bs-theme=dark] button.accordion-button{
+    color: #dee2e6; /* Text color for the button during dark mode*/
+    background: darkgreen;
+}
+
+[data-bs-theme=dark] button.accordion-button.collapsed{
+    background: darkgreen;
+}
+
+[data-bs-theme=dark] button.btn-dark.ml-auto{
+    background:white;
+    color: black;
+}
+
+[data-bs-theme=dark] nav#navbarColor.navbar.navbar-expand.navbar-light{
+    background: darkgreen;
+}
+
+[data-bs-theme=dark] button.btn.btn-primary{
+    color: #dee2e6; /* Text color for the button during dark mode*/
+    background: darkgreen !important;
+}
+
+.or p {
+    margin: 1rem 0.5rem;
+    font-weight: bold;
+    text-shadow: #333333;
+}
+.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.accordion-button:focus {
+    background-color: #6c9574;
+    color: black;
+}
+
+button.accordion-button:not(.collapsed):focus {
+    background-color: #18490d;
+    color: white;
+}
+button.accordion-button:hover {
+    background-color: #6c9574;
+
+}
+
+/*experience page*/
+
+#radio-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 3cm;
+    padding-right: 3cm;
+}
+
+/*experience page*/
+
+.P2_star{
+    color: red;
+}
+
+/*shadow for the scale*/
+.form-control{
+    box-shadow: inset 0 0 2px #333333
+}
+
+/* The container */
+.custom-container {
+    display: inline-block;
+    position: relative;
+    padding: 10px 15px ;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+
+/*border background color*/
+.border {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #ffffff;
+    width: fit-content;
+    box-shadow: 0 0 9px #333333;
+}
+
+
+/* On mouse-over*/
+.custom-container:hover input ~ .checkmark {
+    background-color:   #6c9574;
+    transform: scale(1.2);
+}
+
+
+/*on click color changes*/
+.custom-container input:checked ~ .checkmark {
+    background-color: #333333;
+    color: #ffffff;
+    font-size: small;
+}
+
+/* Hide the browser's default radio button */
+.custom-container input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #151111;  /* number color*/
+    font-weight:bold;
+    font-size: small;
+}
+
